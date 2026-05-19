@@ -18,8 +18,7 @@
 // algoritma
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
 
-let nama = "ijo"
-    peran = "assasin";
+let nama = "harkon", peran = "ksatria";
 if (nama === "") 
     console.log("nama wajib diisi")            
 if (peran === "") {
