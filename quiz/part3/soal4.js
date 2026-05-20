@@ -1,26 +1,17 @@
-// Buatlah 3 perulangan baru dari 1 - 100, dengan pertambahan counter sebesar 2, 5, dan 9.
-// Pada 3 perulangan baru ini periksa setiap angka counter:
-
-// Apabila bukan kelipatan yang ditentukan tidak perlu menuliskan apa-apa
-// Apabila angka counter adalah kelipatan 3 dengan pertambahan 2, kelipatan 6 dengan pertambahan 5, dan kelipatan 10 dengan pertambahan 9, tuliskan:
-// "3 kelipatan 3"dan seterusnya.
-
-
-
-for (let i = 1; i <= 100; i += 2) {
-    if (i % 3 === 0); {
-    console.log(`${i} kelipatan 3`)
-    }
+for (let i = 2; i <= 100; i += 2) {
+  if (i % 3 === 0) {
+    console.log(`${i} kelipatan 3`);
+  }
 }
 
-for (let i = 1; i <= 100; i += 5) {
-    if (i % 6 === 0); {
-    console.log(`${i} kelipatan 6`)
-    }
+for (let j = 5; j <= 100; j += 5) {
+  if (j % 6 === 0) {
+    console.log(j + " kelipatan 6 ");
+  }
 }
 
-for (let i = 1; i <= 100; i += 9) {
-    if (i % 10 === 0); {
-    console.log(`${i} kelipatan 10`)
-    }
+for (let k = 9; k <= 100; k += 9) {
+  if (k % 10 === 0) {
+    console.log(`${k} kelipatan 10`);
+  }
 }

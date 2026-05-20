@@ -1,14 +1,10 @@
 let i = 0;
-let j = 10;
-
-console.log("looping maju");
-while (i <= 10) {
-console.log("looping maju " + i);
-    i++;
+while (i <= 5) {
+  console.log("looping pertama: " + i);
+  i++;
 }
-
-console.log("looping mundur");
+let j = 5;
 while (j >= 0) {
-    console.log("looping mundur " +j);
-    j--;
+  console.log("looping kedua: " + j);
+  j--;
 }
