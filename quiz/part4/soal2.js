@@ -1,29 +1,8 @@
-// Buatlah sebuah fungsi bernama calculateMultiply(), yang mengembalikan nilai berupa hasil kali dari 
-// dua parameter yang dikirim.
+let num1 = 1;
+let num2 = 2;
 
-//bikin fungsinya disini
-function calculateMultiply() {
-    return num1 * num2;
+let hasilPerkalian = calculateMultiply(num1, num2);
+function calculateMultiply(num1, num2) {
+  return num1 * num2;
 }
-let num1 = 5
-let num2 = 2
-
-
-let  = hasilPerkalian = calculateMultiply(num1,num2);{
-console.log(hasilPerkalian)
-}
-// ------------------------------------
-
-// -----------------------------------
-
-
-//const potongApel = function(jumlah) {
-//    return jumlah * 4; // 1 apel dipotong jadi 4 🍴
-//};
-
-// Fungsi sebagai parameter (higher-order function)
-//function prosesApel(apel, action) {
-//   return action(apel);
-//}
-
-//console.log(prosesApel(3, potongApel)); // 12
+console.log(hasilPerkalian);
