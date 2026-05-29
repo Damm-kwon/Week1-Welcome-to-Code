@@ -1,14 +1,9 @@
-// Problem
-// Diberikan sebuah function konversiMenit(menit) yang menerima satu parameter berupa angka yang merupakan ukuran waktu 
-// dalam menit. Function akan me-return string waktu dalam format jam:menit berdasarkan menit tersebut. 
-// Contoh, jika menit adalah 63, maka function akan me-return "1:03".
-
 function konversiMenit(menit) {
-    let hours = Math.floor(menit / 60);
-    let menit1 = menit % 60;
-    return `${String(hours).padStart(2, '0')}:${String(menit1).padStart(2, '0')}`;
+  const jam = Math.floor(menit / 60);
+  const sisaMenit = String(menit % 60).padStart(2, "0");
+  return `${jam}:${sisaMenit}`;
 }
-  
+
 // TEST CASES
 console.log(konversiMenit(63)); // 1:03
 console.log(konversiMenit(124)); // 2:04

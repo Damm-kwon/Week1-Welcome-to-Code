@@ -1,23 +1,11 @@
-//   Problem
-//   Diberikan sebuah function xo(str) yang menerima satu parameter berupa string. 
-//   Function akan me-return true jika jumlah karakter x sama dengan jumlah karakter o, dan false jika tidak.
-
 function xo(str) {
-    let x = 0
-    let o = 0
-    for(let char of str) {
-        if (char == "x"){
-            x++;
-        }
-        else if (char == "o")
-            o++;
-    }
-    return x == o;
+  const jumlahX = str.split("").filter((huruf) => huruf === "x").length;
+  const jumlahO = str.split("").filter((huruf) => huruf === "o").length;
+  return jumlahO === jumlahX;
 }
-  
 // TEST CASES
-console.log(xo('xoxoxo')); // true
-console.log(xo('oxooxo')); // false
-console.log(xo('oxo')); // false
-console.log(xo('xxxooo')); // true
-console.log(xo('xoxooxxo')); // true
+console.log(xo("xoxoxo")); // true
+console.log(xo("oxooxo")); // false
+console.log(xo("oxo")); // false
+console.log(xo("xxxooo")); // true
+console.log(xo("xoxooxxo")); // true
